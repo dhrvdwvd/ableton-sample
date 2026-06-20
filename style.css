@@ -1,0 +1,57 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+* {
+  --secondary-color: #fff;
+  --collage-color-1: #fbffa7;
+  --collage-color-2: #b6ffc0;
+  --collage-color-3: #b1c5ff;
+}
+a {
+  text-decoration: none;
+}
+
+div.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#nav-logo {
+  font-size: 150%;
+}
+nav ul li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.hero-image {
+  margin: 0% 10%;
+}
+.hero-image > img {
+  width: 100%;
+}
+.hero-text {
+  text-align: center;
+  font-size: 5em;
+}
+.child {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.parent {
+  position: relative;
+}
+.about {
+  margin: 2.5% 20%;
+}
