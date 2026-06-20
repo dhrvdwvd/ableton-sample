@@ -43,15 +43,42 @@ nav ul li a {
 .hero-text {
   text-align: center;
   font-size: 5em;
+  top: 35%;
+  left: 35%;
 }
 .child {
   position: absolute;
-  top: 35%;
-  left: 35%;
 }
 .parent {
   position: relative;
 }
 .about {
   margin: 2.5% 20%;
+}
+#collage-1 {
+  height: 80vh;
+  width: 100%;
+  > #right-bg-color {
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    background-color: var(--collage-color-1);
+  }
+  > #left-img-collage-1 {
+    height: 70%;
+    width: 40%;
+    left: 8.5%;
+    top: 12.5%;
+  }
+  > #right-img-collage-1 {
+    height: 45%;
+    width: 30%;
+    right: 8.5%;
+    top: 25%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
