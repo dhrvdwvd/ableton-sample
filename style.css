@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+}
 body {
   background-color: #fff;
   margin: 0;
@@ -8,6 +11,8 @@ body {
   --collage-color-1: #fbffa7;
   --collage-color-2: #b6ffc0;
   --collage-color-3: #b1c5ff;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -53,12 +58,12 @@ nav ul li a {
   position: relative;
 }
 .about {
-  margin: 2.5% 20%;
+  margin: 2rem 16.5rem;
 }
 #collage-1 {
   height: 80vh;
   width: 100%;
-  > #right-bg-color {
+  > #bg-color-collage-1 {
     left: 40%;
     width: 60%;
     height: 100%;
@@ -81,4 +86,49 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
   }
+}
+#collage-2 {
+  height: 105vh;
+  width: 100%;
+  > #bg-color-collage-2 {
+    right: 40%;
+    width: 60%;
+    height: 100%;
+    background-color: var(--collage-color-2);
+  }
+  > #left-img-collage-2 {
+    left: 8.5em;
+    top: 6em;
+  }
+  #left-1-collage-2 {
+    display: block;
+    height: 20em;
+    width: 24em;
+    margin-bottom: 6em;
+  }
+  #left-2-collage-2 {
+    display: block;
+    height: 20em;
+    width: 24em;
+  }
+  > #right-img-collage-2 {
+    height: 35em;
+    width: 30em;
+    right: 8.5em;   
+    top: 10em;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+iframe {
+  margin: 1em auto 0em;
+  display: block;
+  width: 47em;
+  height: 30em;
+}
+p#video-title {
+  margin-top: 0.5em;
 }
