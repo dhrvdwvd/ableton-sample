@@ -94,12 +94,10 @@
       <ul class="newsletter">
         <li class="section-title">Sign up to our newsletter</li>
         <li>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more. </li>
-        <ul class="sign-up-form">
-          <li class="email-input">
-            <input type="email" placeholder="Email Address">
-          </li>
-          <li class=sign-up-button">
-            <button>Sign up</button>
+        <form action="" class="sign-up-form">
+          <input id="email-input" type="email" placeholder="Email Address">
+          <input id="sign-up-btn" type="submit" value="Sign up">
+        </form>
           </li>
         </ul>
       </ul>
@@ -111,12 +109,38 @@
       </ul>
       <ul class="location">
         <li class="section-title">Language and Location</li>
-        <ul>
-          <li><input type="selector"></li>
-          <li><input type="selector"></li>
-        </ul>
+        <form action="/">
+          <select id="language" name="Language">
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Chinese">Chinese</option>
+          </select>
+          <select id="country" name="Country">
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+          </select>
+        </form>
       </ul>
     </div>
+    <nav class="footer-nav">
+      <ul class="foot-nav-links">
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Press Resources</a></li>
+        <li><a href="">Legal Info</a></li>
+        <li><a href="">Corporate Information</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Cookie Settings</a></li>
+        <li><a href="">Imprint</a></li>
+        <li><a href="">Withdraw from Contract</a></li>
+      </ul>
+      <ul class="made-logo">
+        <li>Made in Berlin</li>
+        <li>LOGO</li>
+      </ul>
+    </nav>
   </footer>
   </main>
 </body>

@@ -36,7 +36,7 @@ nav ul {
 #nav-logo {
   font-size: 150%;
 }
-nav ul li a {
+nav.primary ul li a {
   display: block;
   padding: 14px 16px;
   text-decoration: none;
@@ -140,7 +140,7 @@ footer {
 .footer-title {
   font-size: 3em;
   margin-top: 5em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .footer-links {
   display: grid;
@@ -173,16 +173,41 @@ footer {
 .sign-up-form {
   display: flex;
   margin-top: 1em;
-  font-size: 1.25em;
-  input {
-    background-color: lightgray;
+  #email-input {
+    background-color: #eee;
     padding: 1em;
     border: 0px;
+    font-size: 1.1em;
    }
-  button {
+  #sign-up-btn {
     background-color: blue;
     color: bisque;
     padding: 1em;
     border: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
   }
+}
+.location > form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 5px;
+  > select {
+    border: 0px;
+    background-color: #eee;
+    padding: 0.5em;
+  }
+}
+.footer-nav {
+  display: flex;
+  font-size: 0.7em;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  > .foot-nav-links > li {
+    margin-right: 1em;
+  } 
+}
+.made-logo > li {
+  justify-content: space-between;
+  margin-left: 1em;
 }
