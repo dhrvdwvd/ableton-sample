@@ -11,6 +11,7 @@ body {
   --collage-color-1: #fbffa7;
   --collage-color-2: #b6ffc0;
   --collage-color-3: #b1c5ff;
+  --collage-color-4: #d5b3ff;
   --primary-color: #ff764d;
   padding: 0;
   margin: 0;
@@ -32,17 +33,18 @@ nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 75px;
 }
 #nav-logo {
   font-size: 150%;
 }
-nav.primary ul li a {
+nav.primary ul li a, nav.secondary ul li a {
   display: block;
   padding: 14px 16px;
   text-decoration: none;
 }
 .hero-image {
-  margin: 0% 10%;
+  margin: 0% 7.5%;
 }
 .hero-image > img {
   width: 100%;
@@ -133,6 +135,71 @@ iframe {
 }
 p#video-title {
   margin-top: 0.5em;
+}
+#collage-3 {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  padding: 0 6em 0 6em;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+#collage-4 {
+  height: 80vh;
+  width: 100%;
+  margin: 6rem auto;
+  > #bg-color-collage-4 {
+    height: 100%;
+    width: 70%;
+    left: 15vw;
+    right: 15vw;
+    background-color: var(--collage-color-4);
+  }
+}
+#left-img-collage-4 {
+  top: 18vw;
+  left: 8vw;
+  img {
+    width: 35vw;
+    object-fit: cover;
+  }
+}
+#right-img-collage-4 {
+  top: 10vw;
+  right: 0%;
+  img {
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+  }
+}
+
+#collage-5 {
+  width: 80%;
+  margin: 6rem auto;
+  display: flex;
+  > .jobs-image {
+    flex: 1;
+    > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  > .jobs-desc {
+    background-color: var(--collage-color-3);
+    padding: 6em;
+    flex: 1;
+    > p {
+      line-height: 1.5em;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
 }
 footer {
   margin: 0 5em 0 5em;
